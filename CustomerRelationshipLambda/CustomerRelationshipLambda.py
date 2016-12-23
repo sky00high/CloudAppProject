@@ -72,10 +72,7 @@ def checkIDInCustomer(ID):
             "email": ID,
             "res_key": generateUUID()
             }
-<<<<<<< Updated upstream
 
-=======
->>>>>>> Stashed changes
     invokeLambda("Customer", payload)
     while True:
         resp = getPayload(invokeLambda("Result", {
